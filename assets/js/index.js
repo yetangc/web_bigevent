@@ -2,7 +2,7 @@ $(function() {
     getUserInfo()
     var layer = layui.layer
         //实现退出功能
-    $('.layui-nav-item').on('click', function() {
+    $('#btnLogout').on('click', function() {
         layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function(index) {
             //do something
             //1.清空localStorage
